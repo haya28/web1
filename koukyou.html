@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前期期末テスト 情報対策</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(','\\)']] // インライン数式のデリミタを設定
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+    <body>
+        <form name="myTest">
+            <u>
+                <div id="page_top"></div>
+                <h1>前期期末テスト <br>情報3対策サイト</h1>
+            </u>
+            <p>最終更新日:<time id="modify"></time></p>
+            <br>
+            <input type="button" value="全て隠す" onclick="checkCLEAR()">
+            <input type="button" value="全て表示" onclick="checkALL()">
+            <button onclick="resetAll()">リセット</button>
+            
+            <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+            <p>推奨ブラウザ:chrome・Yahoo!・safari</p>
+        
+            <br>
+            <h4>操作方法と諸注意</h4>
+            <p>
+                <ul>
+                    <li>全て隠す：回答を全て非表示にします。</li>
+                    <li>全て表示：回答をすべて表示します。</li>
+                    <li>リセット：すべての表示をリセットできます。</li>
+                    <li>問題横のチェックボックスをクリックすると問題が半透明になります。</li>
+                    <li>ブラウザを更新すると操作がおかしくなることがあるのでリセットボタンを押して直してください。</li>
+                    <li>解説ボタンで解説の表示非表示を切り替えることができます。</li>
+                    <li>Iコースの学生複数名で確認を行っていますが，間違いがあれば教えて下さい。</li>
+                </ul>
+            </p>
+
+            <h4>過去の問題</h4>
+
+            <a href="https://s-ao213.github.io/information2/question1.html">2023前期中間の問題</a>
+            <br>
+            <a href="https://s-ao213.github.io/information/question.html">2023前期末の問題</a>
+            <br>
+            <a href="https://s-ao213.github.io/information3/index.html">2024前期期中間の問題</a>
+
+            <u>
+                <h3 id="index">目次</h3>
+            </u>
+            <u>
+                <h4>講義ノート一覧</h4>
+            </u>
+            <ul>
+                <p style="color: red;">※講義ノート第8回は前期中間試験のため省略</p>
+                <li><a href="#note1">講義ノート第9回</a></li>
+                <li><a href="#note2">講義ノート第10回</a></li>
+                <li><a href="#note3">講義ノート第11回</a></li>
+                <li><a href="#note4">講義ノート第12回</a></li>
+                <p style="color: red;">※講義ノート第13回は定着確認がないため省略</p>
+
+
+            <!-- <li><a href="#note">講義ノート第回</a></li> -->
+            </ul>
+
+            <!-- <section>
+                <u>
+                    <h2 id="note">講義ノート第回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+            </section> -->
+<!-- 
+            <div class="container" id="container">
+                <input type="checkbox" onclick="grayOutContainer('container')">
+                <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p>
+                <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                <div class="explanation" id="explanation">
+                    <p></p>
+                </div>
+                <br>
+            </div> -->
+
+            <section>
+                <u>
+                    <h2 id="note1">講義ノート第9回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+            
+                <div class="container" id="container0">
+                    <input type="checkbox" onclick="grayOutContainer('container0')"> 次のデータは、名義尺度／順序尺度／間隔尺度／比例尺度のどれに分類するのが最も適切か答えよ。
+                    <p>① 顧客満足度（非常に不満、不満、普通、満足、非常に満足）</p>
+                    <p><span id="test"><input type="checkbox" id="blank0"><label for="blank0">　順序尺度　</label></span></p>
+                    <p>② 最終学歴（高校、高専・短大・専門学校、大学、大学院（修士）、大学院（博士））</p>
+                    <p><span id="test"><input type="checkbox" id="blank1"><label for="blank1">　順序尺度　</label></span></p>
+                    <p>③ 国籍（日本、英国、米国、カナダ、フランス、ドイツ、イタリア・・・）</p>
+                    <p><span id="test"><input type="checkbox" id="blank2"><label for="blank2">　名義尺度　</label></span></p>
+                    <p>④ 時刻 </p>
+                    <p><span id="test"><input type="checkbox" id="blank3"><label for="blank3">　間隔尺度　</label></span></p>
+                    <p>⑤ 年収 </p>
+                    <p><span id="test"><input type="checkbox" id="blank4"><label for="blank4">　比例尺度　</label></span></p>
+                    
+                    <button onclick="toggleExplanation(event, 'explanation0')">解説を見る</button>
+                    <div class="explanation" id="explanation0">
+                        <p>④は午前 2 時は午前 1 時の 2 倍という意味を持たないため間隔尺度です。</p>
+
+                        <h3>各尺度の説明</h3>
+                        <li><strong>名義尺度 (Nominal Scale):</strong> 名義尺度は、データをカテゴリーに分けるために使用されます。カテゴリー間に順序はなく、単に区別するためのラベルとして機能します。例としては、性別（男性、女性）、血液型（A型、B型、O型、AB型）などがあります。</li>
+                        <br>
+                        <li><strong>順序尺度 (Ordinal Scale):</strong> 順序尺度は、データを順序に基づいて分類しますが、その間隔は等しくないかもしれません。順序は重要ですが、正確な差は不明です。例としては、満足度評価（満足、普通、不満）、学年（1年生、2年生、3年生）などがあります。</li>
+                        <br>
+                        <li><strong>間隔尺度 (Interval Scale):</strong> 間隔尺度は、データ間の差が一定であることを意味しますが、絶対的なゼロ点がありません。つまり、データの間隔は等しいですが、「無」が存在しません。例としては、温度（摂氏や華氏）、カレンダーの日付などがあります。</li>
+                        <br>
+                        <li><strong>比例尺度 (Ratio Scale):</strong> 比例尺度は、絶対的なゼロ点を持ち、データ間の比率を比較できます。これにより、「無」を含む量的な測定が可能です。例としては、重量、高さ、年齢、収入などがあります。</li>
+
+                    </div>
+                    <br>
+                </div>
+            
+                <div class="container" id="container1">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container1')"> パーセンタイル（Percentile）に相当する語を漢字 4 文字で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　百分位数　</label></span></p>
+                    <br>
+                </div>
+            
+                <div class="container" id="container2">
+                    <input type="checkbox" onclick="grayOutContainer('container2')">「中位数」と同じ意味を持つ語をすべて答えよ。
+                    <p>① 平均値 ② 最頻値 </p>
+                    <p>③ 中央値 ④ 50 パーセンタイル </p>
+                    <p>⑤ 第 2 四分位数 ⑥ 期待値</p>
+                    <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　③　④　⑤　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation1')">解説を見る</button>
+                    <div class="explanation" id="explanation1">
+                        <h3>各言葉の意味の説明</h3>
+                        <ul>
+                            <li><strong>中位値:</strong>代表値の一つで、複数のデータを値の大きさの順に並べたとき、中央にくるデータの値のこと。対象となるデータ数が偶数の場合は、中央にある二つ値の平均値となる。</li>
+                            <li>① <strong>平均値:</strong> 全データの合計をデータの個数で割った値。</li>
+                            <li>② <strong>最頻値:</strong> 最も頻繁に出現する値。</li>
+                            <li>③ <strong>中央値:</strong> データを昇順または降順に並べたとき、中央に位置する値。</li>
+                            <li>④ <strong>50 パーセンタイル:</strong> 全データの 50% がこの値以下であることを示す値。</li>
+                            <li>⑤ <strong>第 2 四分位数:</strong> データを 4 等分したときの 2 番目の区切りの値で、中央値と同じです。</li>
+                            <li>⑥ <strong>期待値:</strong> 確率論における平均値で、各値にその確率を掛けた総和。</li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+
+                
+                <div class="container" id="container3">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container3')">心理学者ジョージ・A・ミラーは「人間の短期記憶の容量には限界があり、一度に保持できる情報の単位（チャンク）の数は約（ ）個である」と主張している。括弧にあてはまる数値を〇〇±〇の形式で答えよ。〇の数と正答の桁数は関係ない。
+                    <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　7±2　</label></span></p>
+                    <br>
+                </div>
+
+                <div class="container" id="container4">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container4')">「平均」を意味する 2 つの英単語を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average　Mean　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation2')">解説を見る</button>
+                    <div class="explanation" id="explanation2">
+                        <p>英語で「平均」は Mean と表現されます。Average も同様に「平均」を意味しますが、Average は Mean よりも広義で「中央値」や「最頻値」なども含めた意味で使われることがあります。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container5">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container5')">\(n\) 個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                    <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　\(\frac{1}{n} \sum_{i=1}^{n} x_i\)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation3')">解説を見る</button>
+                    <div class="explanation" id="explanation3">
+                        <p> <br>
+                            \( n \) 件のデータ \((x_1, x_2, \ldots, x_n)\) の算術平均を求めるためには、まず全てのデータの総和を求め、その総和をデータの件数 \( n \) で割ります。
+                            <br>
+                            これを数式で表すと、以下のようになります.
+                            <br>
+                            \[
+                            \text{算術平均} = \frac{1}{n} \sum_{i=1}^{n} x_i
+                            \]
+                            <br>
+                            ここで、
+                            <ul>
+                                <li>\( \sum \) はシグマ記号で、総和を表します。</li>
+                                <li>\( i \) は総和のインデックスで、各データの番号を示します。</li>
+                                <li>\( x_i \) は \( i \) 番目のデータを表します。</li>
+                                <li>\( n \) はデータの総数を表します。</li>
+                            </ul>
+                            <br>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container6">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container6')">次の各分析について、常に正しいと言えるものは「〇」、常に正しいとは言えないものについては「×」を答えよ。
+                    <p>分析①：40 名のクラスで試験を実施したところ、平均点が 49 点であった。いま、点数区分を「0 から19 点」「20 から 39 点」「40 から 59 点」「60 から 79 点」「80 から 100 点」に区切るとすれば、「40 から 59 点」に属する学生が最も多い。</p>
+                    <p>分析①<span id="test"><input type="checkbox" id="blank10"><label for="blank10">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation12')">解説を見る</button>
+                    <div class="explanation" id="explanation12">
+                        <p>分析①：<strong>×（常に正しいとは言えない）。</strong>\(20\) 名が \(0\) 点、\(19\) 名が \(100\) 点。\(1\) 名が \(60\) 点であれば、合計は
+                        <p>\( 20 \times 0 + 19 \times 100 + 1 \times 60 = 1960 \) 点</p>
+                        <p>平均点は \( \frac{1960}{40} = 49 \) 点。「\(0\) から \(19\) 点」の学生が一番多いです。</p>
+                    </div>
+                    <br>
+
+                    <p>分析②：40 名のクラスで試験が実施され、自分の成績は 65 点、クラスの平均点は 62 点であった。よって、自分は（成績順位において）上位半分に含まれるといえる。</p>
+                    <p>分析②<span id="test"><input type="checkbox" id="blank19"><label for="blank19">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation13')">解説を見る</button>
+                    <div class="explanation" id="explanation13">
+                        <p>分析②： <strong>×（常に正しいとは言えない）。</strong> 中央値以上の成績であれば上位半分に含まれるが、平均値以上であっても上位半分に含まれるとは限らないです。</p>
+                    </div>
+                    <br>
+
+                    <p>分析③：情報 3 の中間試験の成績が 65 点（クラス平均 50 点）であった。その後、情報 3 の前期末試験の成績が 75 点（クラス平均 40 点）であった。これより、情報 3 の成績順位は、中間試験のときよりも、前期末試験のほうが向上しているはずだ。</p>
+                    <p>分析③<span id="test"><input type="checkbox" id="blank20"><label for="blank20">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation14')">解説を見る</button>
+                    <div class="explanation" id="explanation14">
+                        <p>分析③：<strong>×（常に正しいとは言えない）。</strong>\(40\) 名中 \(30\) 名が \(80\) 点、\(6\) 名が \(2\) 点、\(3\) 名が \(1\) 点、自分が \(65\) 点で平均は</p>
+                        <p> \( \frac{30 \times 80 + 6 \times 2 + 3 \times 1 + 65}{40} = 60.2 \) 点</p>
+                        <p>の場合、クラス上位半分には含まれないです。</p>
+                    </div>
+                    <br>
+
+                    <p>分析④：中学 1 年生の学年末の 9 科目平均が 79 点であった。そして、2 年生の学年末の 9 科目平均は 86点であった。これより、少なくとも 1 年次よりも 2 年次のほうが学年順位があがっているはずだ。</p>
+                    <p>分析④<span id="test"><input type="checkbox" id="blank21"><label for="blank21">　×　</label></span></p>
+
+                    <p>分析⑤：A 君の 9 科目平均は 65 点であった。また、B 君の 9 科目平均は 70 点であった。これより、B君は、A 君よりも点数が高かった科目数が多いはずだ。</p>
+                    <p>分析⑤<span id="test"><input type="checkbox" id="blank22"><label for="blank22">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation16')">解説を見る</button>
+                    <div class="explanation" id="explanation16">
+                        <img class="photo2" src="分析５解説.png" alt="分析の表">
+                    </div>
+                    <br>
+
+                    <p>分析⑥：40 名のクラスで試験を実施したところ、平均が 62 点であった。クラス全員の試験点数を合計すると 2480 点となるはずだ。</p>
+                    <p>分析⑥<span id="test"><input type="checkbox" id="blank23"><label for="blank23">　○　</label></span></p>
+
+                    <p>分析⑦：10 人の高血圧患者に対して、血圧を下げる新薬 X を投与したところ、10 名についての最高血圧を平均した値が 181 から 182 になった。これより、新薬 X には最高血圧を下げる効果は期待できないといえる。</p>
+                    <p>分析⑦<span id="test"><input type="checkbox" id="blank24"><label for="blank24">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation15')">解説を見る</button>
+                    <div class="explanation" id="explanation15">
+                        <p><strong>×（常に正しいとは言えない）。</strong>
+                            <br>
+                            以下のように 10 人中 8 人は最高血圧が下がっているというケースも考えられます。</p>
+                        <img class="photo2" src="分析7解説.png" alt="分析の表">
+                    </div>
+                    <br>
+
+                    <p>分析⑧：高専 3 年生の成績はクラス 2 位であった。また、高専 4 年生の成績はクラス 3 位であった。よって、3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性はない。（3 年と 4 年でクラスのメンバーは同じものとする）</p>
+                    <p>分析⑧<span id="test"><input type="checkbox" id="blank25"><label for="blank25">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation4')">解説を見る</button>
+                    <div class="explanation" id="explanation4">
+                        <p><strong>×（常に正しいとは言えない）。</strong>3 年で 1 位だった学生が 4 年で 40 位、3 年で 39 位と 40 位だった学生が、1 位と 2 位になった場合、この学生が 3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性があります。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container7">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer(Container7)">20個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について調和平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                    <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　\( \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}} \)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation5')">解説を見る</button>
+                    <div class="explanation" id="explanation5">
+                        <p> <br>
+                            \( n \) 件のデータ \((x_1, x_2, \ldots, x_n)\) の調和平均を求めるためには、まず各データの逆数の総和を求め、その総和をデータの件数 \( n \) で割ります。
+                            <br>
+                            これを数式で表すと、以下のようになります.
+                            <br>
+                            \[
+                            \text{調和平均} = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}
+                            \]
+                            <br>
+                            ここで、
+                            <ul>
+                                <li>\( \sum \) はシグマ記号で、総和を表します。</li>
+                                <li>\( i \) は総和のインデックスで、各データの番号を示します。</li>
+                                <li>\( x_i \) は \( i \) 番目のデータを表します。</li>
+                                <li>\( n \) はデータの総数を表します。</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container8">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container8')">A 君は平日に新聞配達のバイトをしている。担当の配達先は 100 件となっている。今週の月曜は 50 部/時間、火曜は 55 部/時間、水曜は 60 部/時間、木曜は 30 部/時間（大雨だった）、金曜は 45 部/時間で配達ができた。5 日間での平均配達速度（部/時間）を求めるための式を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　\(\frac{50 + 55 + 60 + 30 + 45}{5} = 48 \, \text{部/時間}\)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation6')">解説を見る</button>
+                    <div class="explanation" id="explanation6">
+                        <p>A君が平日に配達した新聞の平均配達速度を求めるためには、まず5日間の配達速度を合計し、その合計を5で割ります。</p>
+                        <p>具体的には、以下の計算式を用います</p>
+                        <p>
+                            \[
+                            \text{平均配達速度} = \frac{50 + 55 + 60 + 30 + 45}{5}
+                            \]
+                        </p>
+                        <p>ここで、</p>
+                        <ul>
+                            <li>月曜の配達速度: 50 部/時間</li>
+                            <li>火曜の配達速度: 55 部/時間</li>
+                            <li>水曜の配達速度: 60 部/時間</li>
+                            <li>木曜の配達速度: 30 部/時間（大雨のため遅かった）</li>
+                            <li>金曜の配達速度: 45 部/時間</li>
+                        </ul>
+                        <p>これらを合計して5で割ることで、5日間の平均配達速度を求めることができます。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container9">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container9')">公大製作所の人事部長は、会社説明会で就活生に向けて次のような話をした。2020 年から2022 年にかけての公大製作所の「平均売上成長率」を幾何平均によって求めよ。
+                    <p>我が公大製作所は、新型コロナウイルスの影響で 2020 年度には売上が前年比 40%になるという非常に大きな危機に直面しました。しかし、社員一同の懸命な努力の結果、2021 年度の売上は前年比 110%、そして 2022 年度には前年比 200%という飛躍的な回復と成長を遂げました。厳しい時期ではありましたが、平均してみれば (40 + 110 + 200) / 3 ≒ 116、つまり、年間平均 16%ずつの売上成長が見られました。この結果は、まさに「困難を乗り越えて強くなる」という言葉通りです。</p>
+                    <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　-4.2% 　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation7')">解説を見る</button>
+                    <div class="explanation" id="explanation7">
+                        <p>公大製作所の「平均売上成長率」を幾何平均によって求める方法を解説します。</p>
+                        <p>売上の成長率をパーセンテージから小数に変換して計算します。</p>
+                        <ul>
+                            <li>2020年度の成長率: \(0.40\) （前年比40%）</li>
+                            <li>2021年度の成長率: \(1.10\) （前年比110%）</li>
+                            <li>2022年度の成長率: \(2.00\) （前年比200%）</li>
+                        </ul>
+                        <p>幾何平均は次の式で求めます：</p>
+                        <p>
+                            \[
+                            \text{幾何平均} = \left(0.40 \times 1.10 \times 2.00\right)^{\frac{1}{3}}
+                            \]
+                        </p>
+                        <p>計算を行うと：</p>
+                        <p>
+                            \[
+                            \left(0.40 \times 1.10 \times 2.00\right)^{\frac{1}{3}} \approx 0.958
+                            \]
+                        </p>
+                        <p>これをパーセンテージに戻すと、平均売上成長率は約 \(95.8%\) となり、前年と比べて平均すると約 \(4.2%\) の減少（ \(-4.2%\) ）となります。</p>
+                        <p>したがって、幾何平均による「平均売上成長率」は \(-4.2%\) です。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container10">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container10')">次に示しす 40 人クラスの「国語」の得点分布を示した箱ひげ図について、次の各問いに答えよ。なお、小テストや試験で出題する際には、図内に Min、Max、Q1、Q2、Q3 の表記はしていないので注意すること。
+                    <img class="photo3" src="国語の箱ひげ図.png" alt="箱ひげ図">
+                    
+                    <p>(1) 席次 1 位、10 位、20 位、30 位、40 位の得点は、およそ何点か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　 (1) 1位：87 点、　10 位：約 76 点<br>　20 位：約 67 点　30 位：約 63 点<br>　40 位：46 点　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation8')">解説を見る</button>
+
+                    <div class="explanation" id="explanation8">
+                        <p>この箱ひげ図では、各四分位点や最大値・最小値が示されています。各順位の点数は以下のように推定できます。</p>
+                        <p>
+                            <strong>1位: 87点 </strong>(最大値に近い点数) 
+                            <br>
+                            <strong>10位: 約76点</strong> (第3四分位数に近い点数) 
+                            <br>
+                            <strong>20位: 約67点</strong> (中央値付近の点数) 
+                            <br>
+                            <strong>30位: 約63点 </strong>(第1四分位数に近い点数) 
+                            <br>
+                            <strong>40位: 46点</strong> (最小値に近い点数)
+                        </p>
+                    </div>
+                    <br>
+
+                    <p>(2) この試験において「平均点以上の得点であれば上位 20 位以内に入っている」という解釈は「適切」か「不適切」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　(2) 適切　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation17')">解説を見る</button>
+
+                    <div class="explanation" id="explanation17">
+                        <p>箱ひげ図から見ると、第2四分位数(Q2)は中央値であり、約67点です。この点数は上位20位の境界に近い点数です。したがって、平均点（中央値以上の点数）が上位20位以内に入っていると解釈するのは適切です。</p>
+                    </div>
+                    <br>
+
+                    <p>(3) この試験において「約 63～76 の得点範囲に約 10 名の学生が存在している」という解釈は「適切」か「不適切」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank27"><label for="blank27">　(3) 不適切　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation18')">解説を見る</button>
+
+                    <div class="explanation" id="explanation18">
+                        <p>箱ひげ図によると、第1四分位数(Q1)は約63点、第3四分位数(Q3)は約76点です。この範囲には全体の50%のデータが含まれていますが、クラスの人数が40人であるため、20名がこの範囲に含まれます。したがって、約10名が63～76点の範囲にいるという解釈は不適切です。</p>
+                    </div>
+                    <br>
+
+                    <p>(4) この試験において「平均値>第 2 四分位数である」は「正しい」か「正しくない」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank28"><label for="blank28">　(4) 正しい　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation19')">解説を見る</button>
+
+                    <div class="explanation" id="explanation19">
+                        <p>箱ひげ図から見ると、平均値は中央値である第2四分位数(Q2)よりも低い位置にあることが示されています。したがって、「平均値＜第 2 四分位数である」という主張は正しいです。</p>
+                    </div>
+                    <br>
+
+                    <p>(5) この試験において「点数が 72 点の学生は、上位 11 位から 20 位の範囲に位置する」は「正しい」か「正しくない」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank29"><label for="blank29">　(5) 正しい　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation20')">解説を見る</button>
+                    <div class="explanation" id="explanation20">
+                        <p>点数が72点の学生は、第1四分位数(Q1)と第3四分位数(Q3)の間に位置しており、この範囲は全体の50%のデータが含まれます。したがって、点数が72点の学生が上位11位から20位の範囲に位置すると解釈するのは正しいです。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container11">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container11')">箱ひげ図では（ ① ）を「ひげ」の下限、（ ② ）を「ひげ」の上限として、それに収まらない値を「外れ値」として別途プロットする。括弧にあてはまる式を答えよ。なお、第 1 四分位を Q1、第 2 四分位を Q2、第 3 四分位を Q3 として、Q1～Q3 を使った式で答えること。
+                    <p>①<span id="test"><input type="checkbox" id="blank15"><label for="blank15">　① \(Q1 - 1.5 \times (Q3 - Q1)\) 　</label></span></p>
+                    <p>②<span id="test"><input type="checkbox" id="blank33"><label for="blank33">　② \(Q3 + 1.5 \times (Q3 - Q1)\)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation9')">解説を見る</button>
+                    <div class="explanation" id="explanation9">
+                        <p>箱ひげ図の「ひげ」の下限と上限を求めるための式は以下の通りです</p>
+                        <ul>
+                            <li>① 「ひげ」の下限: \(Q1 - 1.5 \times (Q3 - Q1)\)</li>
+                            <li>② 「ひげ」の上限: \(Q3 + 1.5 \times (Q3 - Q1)\)</li>
+                        </ul>
+                        <p>ここで、</p>
+                        <ul>
+                            <li>\(Q1\): 第1四分位（データの下位25%点）</li>
+                            <li>\(Q2\): 第2四分位（中央値、データの中央値）</li>
+                            <li>\(Q3\): 第3四分位（データの上位25%点）</li>
+                        </ul>
+                        <p>「ひげ」の下限および上限は、データの範囲を示すものであり、それを超えるデータ点は「外れ値」として別途プロットされます。</p>                    </div>
+                </div>
+                <br>
+
+                <div class="container" id="container12">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container12')">箱ひげ図では（ ① ）から（ ② ）の範囲を四分位範囲といい、その範囲にはデータの（ ③ ）%が含まれることになる。括弧にあてはまる語や数値を答えよ。なお、第 1 四分位を Q1、第2 四分位を Q2、第 3 四分位を Q3 として、①と②は Q1、Q2、Q3 のいずれかを答えること。
+                    <p>①<span id="test"><input type="checkbox" id="blank16"><label for="blank16">　① \(Q1\)　</label></span></p>
+                    <p>②<span id="test"><input type="checkbox" id="blank34"><label for="blank34">　② \(Q3\)　</label></span></p>
+                    <p>③<span id="test"><input type="checkbox" id="blank35"><label for="blank35">　③ 50　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation10')">解説を見る</button>
+                    <div class="explanation" id="explanation10">
+                        <p>箱ひげ図における四分位範囲（IQR）は、次のように定義されます。</p>
+                        <ul>
+                            <li>① \(Q1\) から ② \(Q3\) の範囲を四分位範囲（Interquartile Range, IQR）といいます。</li>
+                            <li>その範囲にはデータの ③ 50% が含まれます。</li>
+                        </ul>
+                        <p>具体的には、</p>
+                        <ul>
+                            <li>\(Q1\): 第1四分位（データの下位25%点）</li>
+                            <li>\(Q3\): 第3四分位（データの上位25%点）</li>
+                        </ul>
+                        <p>四分位範囲は、データの中央50%の範囲を示し、データのばらつきや集中の程度を把握するのに役立ちます。</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container13">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container13')">次に示す箱ひげ図は、40 人クラスにおける社会の試験（100 点満点）の得点分布を表すものである。以下の各問いに答えよ。
+                    <img class="photo1" src="箱ひげ図.png" alt="箱ひげ図">
+
+                    <p>(1) 最高得点および最低得点は何点か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　最高得点: 90点, 最低得点: 67点　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation21')">解説を見る</button>
+                    <div class="explanation" id="explanation21">
+                        <p>最高得点は箱ひげ図の右端、最低得点は左端を確認してください。</p>
+                    </div>
+
+                    <p>(2) 平均点は何点か答えよ（小数点以下第１位まで答えること）</p>
+                    <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　平均点: 80.2点　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation22')">解説を見る</button>
+                    <div class="explanation" id="explanation22">
+                        <p>平均点は、ダイヤモンドマークで示されています。図から読み取ると約80.0点です。</p>
+                    </div>
+
+                    <p>(3) 中央値は約何点か答えよ（小数点以下第１位まで答えること）。</p>
+                    <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　中央値: 80.0点　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation23')">解説を見る</button>
+                    <div class="explanation" id="explanation23">
+                        <p>中央値は箱ひげ図の箱の中央の線で示されます。図から読み取ると約80.0点です。</p>
+                    </div>
+
+                    <p>(4) クラスの上位 10 番以内に位置するためには、およそ何点以上をとっている必要があるか。</p>
+                    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　約90点以上　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation24')">解説を見る</button>
+                    <div class="explanation" id="explanation24">
+                        <p>上位10番以内に位置するためには、上位25%に位置する必要があります。箱ひげ図の右側四分位点を確認してください。</p>
+                    </div>
+                    
+                    <p>(5) クラスの上位 21 番から 30 番は、およそ何点から何点の点数範囲に属しているか。</p>
+                    <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　約75点から80点　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation25')">解説を見る</button>
+                    <div class="explanation" id="explanation25">
+                        <p>上位21番から30番の範囲は、箱ひげ図の第1四分位点（Q1）と中央値（Q2）の間の値です。これらを箱ひげ図で確認してください。</p>
+                    </div>
+                    <br>
+                    
+                    <br>
+                </div>
+
+                <div class="container" id="container14">
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container14')">一般に、大きな値の外れ値が存在すると、平均値が中央値よりも（ ）なる傾向がある。括弧にあてはまる適切な語を「大きく」または「小さく」で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank36"><label for="blank36">　大きく　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation26')">解説を見る</button>
+                    <div class="explanation" id="explanation26">
+                        <p>一般に、大きな値の外れ値が存在すると、平均値が中央値よりも大きくなる傾向があります。</p>
+                        <p>理由は、平均値（算術平均）はデータの総和をデータの個数で割った値であり、全てのデータ点に影響を受けます。したがって、極端に大きな値の外れ値が存在すると、その値が平均値を引き上げます。</p>
+                        <p>一方、中央値はデータを小さい順に並べたときの中央の値であり、外れ値の影響を受けにくい指標です。そのため、大きな外れ値がある場合、平均値は中央値よりも大きくなりがちです。</p>                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <u>
+                    <h2 id="note2">講義ノート第10回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+                
+                <div class="container" id="container15">
+                    <input type="checkbox" onclick="grayOutContainer('container15')">Excel において、(1) 転置行列、(2) 行列の積、(3) 逆行列、(4) 行列式を求めるために利用すべき関数はどれか。最も適切なものを答えよ。
+                    <p>
+                        ① TRANSPOSE 関数 ②　 MINVERSE 関数
+                        <br>
+                        ③ MDETERM 関数 　④ MMULT 関数
+                    </p>
+                    <p>(1)<span id="test"><input type="checkbox" id="blank37" ><label for="blank37">　① TRANSPOSE 関数　</label></span></p>
+                    <p>(2)<span id="test"><input type="checkbox" id="blank38" ><label for="blank38">　④ MMULT 関数　</label></span></p>
+                    <p>(3)<span id="test"><input type="checkbox" id="blank39" ><label for="blank39">　② MINVERSE 関数　</label></span></p>
+                    <p>(4)<span id="test"><input type="checkbox" id="blank40" ><label for="blank40">　③ MDETERM 関数　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container16">
+                    <input type="checkbox" onclick="grayOutContainer('container16')">「マクロ（VBA）は Word と Excel の固有機能であり、PowerPoint では利用できない」は「正しい」か「正しくない」か答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank41" ><label for="blank41">　正しくない　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation28')">解説を見る</button>
+                    <div class="explanation" id="explanation28">
+                        <p>PowerPoint でも VBA マクロを利用することができます。したがって、この文は「正しくない」です。</p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container17">
+                    <input type="checkbox" onclick="grayOutContainer('container17')">「Excel ファイルに記述したマクロ（VBA）は、そのファイルに含まれるシートやセルに対してのみ操作や処理が可能となっている（別の Excel ファイルのシートやセルに対する操作や処理はできない）」は「正しい」か「正しくない」か答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank42" ><label for="blank42">　正しくない　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation27')">解説を見る</button>
+                    <div class="explanation" id="explanation27">
+                        <p>Excel の VBA マクロは、他の Excel ファイルのシートやセルに対する操作や処理も行うことができます。したがって、この文は「正しくない」です。</p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container18">
+                    <input type="checkbox" onclick="grayOutContainer('container18')">Microsoft Excel における「Excel マクロ有効ブック」の拡張子を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank43" ><label for="blank43">　xlsm　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container19">
+                    <input type="checkbox" onclick="grayOutContainer('container19')">VBA において（ ）から開始される行はコメントとして扱われる。括弧にあてはまる語を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank44" ><label for="blank44">　シングルクォーテーション、アポストロフィ　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation29')">解説を見る</button>
+                    <div class="explanation" id="explanation29">
+                        <p>VBA のコードにおいて、シングルクォーテーション（'）やアポストロフィ（’）で始まる行はコメントとして扱われます。</p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container20">
+                    <input type="checkbox" onclick="grayOutContainer('container20')">Excel において VBA エディタを起動するためのショートカットキーを答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank45" ><label for="blank45">　Alt+F11　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container21">
+                    <input type="checkbox" onclick="grayOutContainer('container21')">Excel の VBA エディタがアクティブなとき、選択しているサブルーチンを実行するためのショートカットキーを答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank46" ><label for="blank46">　F5　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container22">
+                    <input type="checkbox" onclick="grayOutContainer('container22')">Excel の VBA エディタにおいて「Debug.Print "AAAAA"」のようなコードを実行したときに文字列「AAAAA」が出力されるウィンドウの名称を答えよ。             
+                    <p><span id="test"><input type="checkbox" id="blank47" ><label for="blank47">　イミディエイトウィンドウ　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container23">
+                    <input type="checkbox" onclick="grayOutContainer('container23')">「Excel の VBA において、無限ループが生じたときは（ ① ）の押下のキー操作によって中断することができる。」括弧にあてはまる語を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank48" ><label for="blank48">　ESC　</label></span></p>
+                    <br>
+                </div>
+                
+            </section>
+
+            <section>
+                <u>
+                    <h2 id="note3">講義ノート第11回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+
+                <div class="container" id="container24">
+                    <input type="checkbox" onclick="grayOutContainer('container24')">WWW とは何の略語か答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank49"><label for="blank49">　World Wide Web　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container25">
+                    <input type="checkbox" onclick="grayOutContainer('container25')">HTTP とは何の略語か答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank50"><label for="blank50">　Hyper Text Transfer Protocol　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container26">
+                    <input type="checkbox" onclick="grayOutContainer('container26')">HTTPS の「S」とは略語か答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank51"><label for="blank51">　Secure　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation30')">解説を見る</button>
+                    <div class="explanation" id="explanation30">
+                        <p>HTTPSとは暗号化技術を用いて安全な通信が行えるプロトコルで<strong>Hypertext Transfer Protocol Secure</strong>の略である。</p>
+                    </div>
+                    <br>
+                </div>
+    
+                <div class="container" id="container27">
+                    <input type="checkbox" onclick="grayOutContainer('container27')">通信の文脈において「プロトコル」とは何を意味するか。最も適切なものを答えよ。
+                    <p>① 通信機器のハードウェア仕様を定義するもの</p>
+                    <p>② 通信のためのデータ圧縮方式</p>
+                    <p>③ データの送受信におけるルールや手順を定義するもの</p>
+                    <p>④ ネットワークトポロジを決定するためのルーティングアルゴリズム</p>
+                    <p>⑤ インターネット上でドメイン名を IP アドレスに変換するシステム</p>
+                    <p><span id="test"><input type="checkbox" id="blank52"><label for="blank52">　③　</label></span></p>
+                    <br>
+                </div>
+    
+                
+                <div class="container" id="container28">
+                    <input type="checkbox" onclick="grayOutContainer('container28')">ウェブ（WWW）に関する文脈において「クライアント」とは何を指すか。具体的なソフトウェア名称を 2 つ答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank53"><label for="blank53">　Google Chrome、Edge など　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation31')">解説を見る</button>
+                    <div class="explanation" id="explanation31">
+                        <p>クライアントとは使用している PC やスマートフォンのなどデバイス、またはそれらのデバイスで動作するウェブブラウザ（Google Chrome、Edge、Safari、Firefox など）を指します。</p>
+                    </div>
+                    <br>
+                </div>
+    
+                
+                <div class="container" id="container29">
+                    <input type="checkbox" onclick="grayOutContainer('container29')">ウェブサーバの機能を提供する具体的なソフトウェア名称を 1 つ答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank54"><label for="blank54">　Apache、Nginxなど　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation32')">解説を見る</button>
+                    <div class="explanation" id="explanation32">
+                        <p>ウェブサーバ（Web Server）とは、情報やサービスを提供する役割（Serve する役割）を持つコンピュータやプログラム（例：Apache、Nginx、Microsoft Internet Information Services (IIS)、LiteSpeedなど）を指します。</p>
+                    </div>
+                    <br>
+                </div>
+    
+                <div class="container" id="container30">
+                    <input type="checkbox" onclick="grayOutContainer('container30')">「ウェブサーバの基本機能は、クライアントからの HTTP/HTTPS に基づく（ ① ）に応じて、HTML や画像などのデータを（ ② ）することである」。各括弧にあてはまる最も適切な語をカタカナ 5 文字で答えよ。
+                    <p>①<span id="test"><input type="checkbox" id="blank55"><label for="blank55">　リクエスト　</label></span></p>
+                    <p>②<span id="test"><input type="checkbox" id="blank56"><label for="blank56">　レスポンス　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container31">
+                    <input type="checkbox" onclick="grayOutContainer('container31')">HTML とは何の略語か。英語で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank57"><label for="blank57">　HyperText Markup Language　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container32">
+                    <input type="checkbox" onclick="grayOutContainer('container32')">HTML は「テキストファイル」と「バイナリファイル」のどちらか答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank58"><label for="blank58">　テキストファイル　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container33">
+                    <input type="checkbox" onclick="grayOutContainer('container33')">ウェブページを記述するために用いられる HTML や、文書の構造や見栄えを指定するためのXML などが属する「文章に対して意味付けや見た目の情報を付加するための言語」の総称は何か。最も適切なものを記号で答えよ。
+                    <p>① スクリプト言語</p>
+                    <p>② マークアップ言語</p>
+                    <p>③ アセンブリ言語</p>
+                    <p>④ 機械語 </p>
+                    <p>⑤ メイクアップ言語</p>
+                    <p>⑥ プログラミング言語</p>
+                    <p>⑦ マークダウン言語</p>
+                    <p><span id="test"><input type="checkbox" id="blank59"><label for="blank59">　②　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation33')">解説を見る</button>
+                    <div class="explanation" id="explanation33">
+                        <p><b>① スクリプト言語</b>: 動的に動作するプログラムを書くための言語です。JavaScriptやPythonが例です。</p>
+                        <p><b>② マークアップ言語</b>: 文書の構造や見た目を指定するための言語です。HTMLやXMLがこれに含まれます。</p>
+                        <p><b>③ アセンブリ言語</b>: 機械語に非常に近い低レベルのプログラミング言語で、特定のハードウェアに依存します。</p>
+                        <p><b>④ 機械語</b>: コンピュータのCPUが直接解釈して実行できる命令コードです。最も低レベルの言語です。</p>
+                        <p><b>⑤ メイクアップ言語</b>: 実際には存在しない言葉です。</p>
+                        <p><b>⑥ プログラミング言語</b>: プログラムを記述するための言語の総称で、JavaやC++などが含まれます。</p>
+                        <p><b>⑦ マークダウン言語</b>: テキストをシンプルに書式設定するための軽量マークアップ言語で、Markdownが代表例です。</p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container34">
+                    <input type="checkbox" onclick="grayOutContainer('container34')">「HTML には、特定のキーワードを角括弧（ &lt; と &gt; ）で囲んで表現した（ ① ）と呼ばれるマークアップが用いられる」。括弧にあてはまる最も適切な語をカタカナ 2 文字で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank60"><label for="blank60">　タグ　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container35">
+                    <input type="checkbox" onclick="grayOutContainer('container35')">HTML において &lt;h2&gt;タグに対応する終了タグを答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank61"><label for="blank61">　&lt;/h2&gt;　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container36">
+                    <input type="checkbox" onclick="grayOutContainer('container36')">日本語を含む HTML の記述に適した文字コードを答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank62"><label for="blank62">　UTF-8（BOM なし）　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation34')">解説を見る</button>
+                    <div class="explanation" id="explanation34">
+                        <p>UTF-8（BOM なし）を選択する理由は、BOM（Byte Order Mark）が含まれていると、一部の古いウェブブラウザやエディタで誤って認識されることがあるためです。</p>
+                        <p>BOM（Byte Order Mark）とは、テキストファイルのエンコーディングを示す特別なマーカーで、ファイルの先頭に配置されます。BOMは特にUTF-16やUTF-32で役立ちますが、UTF-8では必ずしも必要ではなく、むしろ問題を引き起こすことがあります。</p>
+                    </div>                
+                    <br>
+                </div>
+                
+                <div class="container" id="container37">
+                    <input type="checkbox" onclick="grayOutContainer('container37')">Windows 環境において標準的に使われる改行コードはどれか（情報 1 と情報 2 の復習）
+                    <p>① CR　 ② LF　 
+                        <br>
+                        ③ CR＋LF 　④ &lt; br &gt;</p>
+                    <p><span id="test"><input type="checkbox" id="blank63"><label for="blank63">　③　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation35')">解説を見る</button>
+                    <div class="explanation" id="explanation35">
+                        <p><b>① CR</b>: キャリッジリターン（Carriage Return）の略で、古いタイプライターでキャリッジ（印字位置）を行の先頭に戻す制御文字を指します。</p>
+                        <p><b>② LF</b>: ラインフィード（Line Feed）の略で、次の行に移動する制御文字です。Unix系OS（LinuxやMacOSなど）で標準的に使われます。</p>
+                        <p><b>③ CR＋LF</b>: キャリッジリターンとラインフィードの組み合わせで、Windows環境で標準的に使われる改行コードです。キャリッジを行の先頭に戻し、次の行に移動する動作をします。</p>
+                        <p><b>④ &lt;br&gt;</b>: HTMLで使われる改行タグで、ウェブページのテキストにおいて改行を挿入するために使用されます。</p>
+                    </div>
+                    
+                    <br>
+                </div>
+                
+                <div class="container" id="container38">
+                    <input type="checkbox" onclick="grayOutContainer('container38')">HTML において &lt; p &gt; タグが表すものは何か。最も適切なものを記号で答えよ。
+                    <p>① 見出し（Header）　 </p>
+                    <p>② 段落（Paragraph）</p>
+                    <p>③ 本文（Body）　</p>
+                    <p>④ 区分（Division）</p>
+                    <p>⑤ ハイパーリンク（Anchor）</p>
+                    <p>⑥ 画像（Image）</p>
+
+                    <p><span id="test"><input type="checkbox" id="blank64"><label for="blank64">　②　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation39')">解説を見る</button>
+                    <div class="explanation" id="explanation39">
+                        <p><b>① 見出し（Header）</b>: HTMLでは、&lt;h1&gt;から&lt;h6&gt;までのタグを使用して見出しを定義します。</p>
+                        <p><b>② 段落（Paragraph）</b>: &lt;p&gt; タグは段落を定義するために使用されます。通常、段落はテキストのまとまりを示します。</p>
+                        <p><b>③ 本文（Body）</b>: &lt;body&gt; タグはHTML文書の本文を示します。このタグの中に、文書の内容が含まれます。</p>
+                        <p><b>④ 区分（Division）</b>: &lt;div&gt; タグは文書内のセクションや区分を定義するために使用されます。</p>
+                        <p><b>⑤ ハイパーリンク（Anchor）</b>: &lt;a&gt; タグはハイパーリンクを定義します。リンク先のURLを指定します。</p>
+                        <p><b>⑥ 画像（Image）</b>: &lt;img&gt; タグは画像を表示するために使用されます。画像のソースURLを指定します。</p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container39">
+                    <input type="checkbox" onclick="grayOutContainer('container39')">HTML において改行を与えるタグを答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank65"><label for="blank65">　&lt; br &gt; または &lt;br /&gt;　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container40">
+                    <input type="checkbox" onclick="grayOutContainer('container40')">HTML において最上位レベルのヘッダを表すためのタグを答えよ（開始タグと終了タグを記述せよ）。
+                    <p><span id="test"><input type="checkbox" id="blank66"><label for="blank66">　&lt; h1 &gt; &lt;/h1 &gt;　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation40')">解説を見る</button>
+                    <div class="explanation" id="explanation40">
+                        <p>hタグは6段階ありそれぞれの表示は以下のようになります。
+                            <h1>h1タグ</h1>
+                            <h2>h2タグ</h2>
+                            <h3>h3タグ</h3>
+                            <h4>h4タグ</h4>
+                            <h5>h5タグ</h5>
+                            <h6>h6タグ</h6>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="container" id="container41">
+                    <input type="checkbox" onclick="grayOutContainer('container41')">HTML において強調（内容の重要性）を表すためのタグを答えよ（開始タグと終了タグを記述せよ）。           
+                    <p><span id="test"><input type="checkbox" id="blank67"><label for="blank67">　&lt; strong &gt; &lt;/strong &gt;　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation42')">解説を見る</button>
+                    <div class="explanation" id="explanation42">
+                        <p>以下が比較です。
+                            <br>
+                            通常　<strong>強調</strong>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+    
+                <div class="container" id="container42">
+                    <input type="checkbox" onclick="grayOutContainer('container42')">「ウェブ開発において、異なるデバイスや画面サイズに対応するために動的に画面レイアウトを調整する設計を（ ）デザインという」。括弧にあてはまる語をカタカナ 6 文字で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank68"><label for="blank68">　レスポンシブ　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container43">
+                    <input type="checkbox" onclick="grayOutContainer('container43')">「ニンジン」を「%E3%83%8B%E3%83%B3%E3%82%B8%E3%83%B3」のような文字列に変換することを何というか。最も適切なものを記号で答えよ。
+                    <p>
+                        ① URL エンコード　 ② URL デコード 
+                        <br>
+                        ③ URL 暗号化 　④ URL 復号化 
+                        <br>
+                        ⑤ URL ハッシュ化</p>
+                    <p><span id="test"><input type="checkbox" id="blank69"><label for="blank69">　① URL エンコード　</label></span></p>
+                    <br>
+                </div>
+    
+                <div class="container" id="container44">
+                    <input type="checkbox" onclick="grayOutContainer('container44')">16 進カラーコードの「#ff00ff」は何色を表すか。最も適切なものを選び記号で答えよ。
+                    <p>
+                        ① マゼンタ 　② イエロー
+                        <br>
+                        ③ シアン　 ④ レッド 
+                        <br>
+                        ⑤ ブルー 　⑥ グリーン</p>
+                    <p><span id="test"><input type="checkbox" id="blank70"><label for="blank70">　①　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation43')">解説を見る</button>
+                    <div class="explanation" id="explanation43">
+                        <p>#ff00ffは<b style="color: #f0f;">マゼンタ色</b>です。この色は赤（ff）と青（ff）が最大値で、緑（00）が最小値のため、マゼンタ色になります。</p>
+                        <p>他の色とそのカラーコードは次の通りです：</p>
+                        <p><b>#ff0000</b>: <span style="color: #f00;">レッド</span> - 赤のみが最大値</p>
+                        <p><b>#00ff00</b>: <span style="color: #0f0;">グリーン</span> - 緑のみが最大値</p>
+                        <p><b>#0000ff</b>: <span style="color: #00f;">ブルー</span> - 青のみが最大値</p>
+                        <p><b>#ffff00</b>: <span style="color: #ff0;">イエロー</span> - 赤と緑が最大値で、青が最小値</p>
+                        <p><b>#00ffff</b>: <span style="color: #0ff;">シアン</span> - 緑と青が最大値で、赤が最小値</p>
+                        <p><b>#ff00ff</b>: <span style="color: #f0f;">マゼンタ</span> - 赤と青が最大値で、緑が最小値</p>
+                    </div>
+                    
+                    <br>
+                </div>
+    
+                <div class="container" id="container45">
+                    <input type="checkbox" onclick="grayOutContainer('container45')">3 桁表示の 16 進カラーコード「#8a3」を、6 桁表示の 16 進カラーコードとして答えよ。先頭の「#」は省略せずに答えること。
+                    <p><span id="test"><input type="checkbox" id="blank71"><label for="blank71">　#88aa33　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation44')">解説を見る</button>
+                    <div class="explanation" id="explanation44">
+                        <p>3桁表示の16進カラーコード「#8a3」を6桁表示の16進カラーコードに変換する方法は以下の通りです。</p>
+                        <ul>
+                            <li>各桁を倍にして同じ数字を使います。</li>
+                            <li>「#8a3」を「#88aa33」に変換することができます。</li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+    
+                <div class="container" id="container46">
+                    <input type="checkbox" onclick="grayOutContainer('container46')">「CSS では、セレクタにつづく波括弧 { と } の内部に、プロパティと値を記述する。プロパティと値の間には（ ① ）を記述し、値の末尾には（ ② ）を記述する。また、margin や paddingなどで複数の値を設定する場合は（ ③ ）で区切って記述する。これらは、いずれも半角で記述することが求められる。」括弧にあてはまる記号の名称をカタカナで答えよ。
+                    <p>①<span id="test"><input type="checkbox" id="blank72"><label for="blank72">　コロン　</label></span></p>
+                    <p>②<span id="test"><input type="checkbox" id="blank73"><label for="blank73">　セミコロン　</label></span></p>
+                    <p>③<span id="test"><input type="checkbox" id="blank74"><label for="blank74">　スペース　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container47">
+                    <input type="checkbox" onclick="grayOutContainer('container47')">CSS を構成する 3 つの要素を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank75"><label for="blank75">　セレクタ、プロパティ、値　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation45')">解説を見る</button>
+                    <div class="explanation" id="explanation45">
+                        <p><b>セレクタ（Selector）</b>: CSSルールが適用されるHTML要素を指定します。例えば、`p`や`.class-name`などがセレクタになります。</p>
+                        <p><b>プロパティ（Property）</b>: HTML要素に適用するスタイルの属性を指定します。例えば、`color`や`font-size`などがプロパティです。</p>
+                        <p><b>値（Value）</b>: プロパティに適用する具体的な値を指定します。例えば、`red`や`14px`などが値です。</p>
+                    </div>                
+                    <br>
+                </div>
+                
+                <div class="container" id="container48">
+                    <input type="checkbox" onclick="grayOutContainer('container48')">CSS において、スタイルを適用したい要素を指定するものを何というか。カタカナ 4 文字で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank76"><label for="blank76">　セレクタ　</label></span></p>
+                    <br>
+                </div>
+                
+                <div class="container" id="container49">
+                    <input type="checkbox" onclick="grayOutContainer('container49')">CSS において、ルート要素（通常は HTML 要素）のフォントサイズを基準に、相対的なサイズを設定したい場合に使用すべき単位はどれか。
+                    <p>① px 　② % 　
+                        <br>
+                        ③ em 　④ rem　 
+                        <br>
+                        ⑤ pt　 ⑥ pc 　⑦ 寸</p>
+                    <p><span id="test"><input type="checkbox" id="blank77"><label for="blank77">　④　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation46')">解説を見る</button>
+                    <div class="explanation" id="explanation46">
+                        <p><b>① px</b>: ピクセル単位。固定の絶対サイズを指定します。</p>
+                        <p><b>② %</b>: パーセンテージ単位。親要素のサイズに対する相対的なサイズを指定します。</p>
+                        <p><b>③ em</b>: 親要素のフォントサイズに対する相対的なサイズを指定します。</p>
+                        <p><b>④ rem</b>: ルート要素（通常はHTML要素）のフォントサイズに対する相対的なサイズを指定します。</p>
+                        <p><b>⑤ pt</b>: ポイント単位。印刷業界で使われる絶対的なサイズを指定します。</p>
+                        <p><b>⑥ pc</b>: パイカ単位。ポイントの12分の1で、印刷業界で使われる絶対的なサイズを指定します。</p>
+                        <p><b>⑦ 寸</b>: 中国の古い長さの単位で、CSSではほとんど使用されません。</p>
+                        <p>ルート要素のフォントサイズを基準にした相対的なサイズ指定には<b>④ rem</b>が適しています。</p>
+                    </div>                
+                    <br>
+                </div>
+                
+                <div class="container" id="container50">
+                    <input type="checkbox" onclick="grayOutContainer('container50')">次に示す CSS コードにおいて、「セレクタ」の具体的な値は何か答えよ。同様に「プロパティ」、「値」についても答えよ。
+                    <div class="code-container">
+                        <pre><code id="python-code" class="language-python">h1 {
+    color: #0000ff;
+}</code></pre>
+                        <button class="copy-button" onclick="copyCode()">コピー</button>
+                    </div>
+                    <p>セレクタ　<span id="test"><input type="checkbox" id="blank78"><label for="blank78">　h1　</label></span></p>
+                    <p>プロパティ<span id="test"><input type="checkbox" id="blank79"><label for="blank79">　color　</label></span></p>
+                    <p>値　　　　<span id="test"><input type="checkbox" id="blank80"><label for="blank80">　#0000ff　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation47')">解説を見る</button>
+                    <div class="explanation" id="explanation47">
+                        <p><b>セレクタ（Selector）</b>: 「h1」はHTML内のすべての&lg;h1&gt;要素を選択するセレクタです。</p>
+                        <p><b>プロパティ（Property）</b>: 「color」は選択された要素（この場合、すべての&lt;h1&gt;要素）のテキスト色を指定するプロパティです。</p>
+                        <p><b>値（Value）</b>: 「#0000ff」は16進カラーコードで、この場合は<b style="color: #0000ff;">青色</b>を表します。</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <u>
+                    <h2 id="note4">講義ノート第12回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+                
+                <div class="container" id="container51">
+                    <input type="checkbox" onclick="grayOutContainer('container51')">ウェブページに美しく整形された数式を表示するための技術は、どれか。最も適切なものを記号で答えよ。
+                    <p>
+                        ① Wolfalpha 　② Mathematica
+                        <br>
+                        ③ MathJax 　④ LaTeX 
+                        <br>
+                        ⑤ jQuery 　⑥ React
+                    </p>
+                    <p><span id="test"><input type="checkbox" id="blank81"><label for="blank81">　③MathJax　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation48')">解説を見る</button>
+                    <div class="explanation" id="explanation48">
+                        <p><b>① Wolfalpha</b>: Wolfram Alphaは、自然言語でのクエリに対する計算や情報検索を行うオンラインサービスです。ウェブページに数式を表示する技術ではありません。</p>
+                        <p><b>② Mathematica</b>: Mathematicaは、数式処理や計算を行うためのソフトウェアです。ウェブページに数式を表示するための技術ではありません。</p>
+                        <p><b>③ MathJax</b>: MathJaxは、ウェブページに美しく整形された数式を表示するためのJavaScriptライブラリです。TeX、LaTeX、およびMathMLで記述された数式を表示するのに使われます。</p>
+                        <p><b>④ LaTeX</b>: LaTeXは、文書の組版に使われるシステムで、特に科学技術文書で広く使われています。ウェブページ上で直接数式を表示するための技術ではありませんが、MathJaxと組み合わせて使われることがあります。</p>
+                        <p><b>⑤ jQuery</b>: jQueryは、JavaScriptライブラリで、ウェブページの操作やイベント処理を簡単にするためのものです。数式の表示には特化していません。</p>
+                        <p><b>⑥ React</b>: Reactは、ユーザインタフェースを構築するためのJavaScriptライブラリです。数式表示専用の技術ではありませんが、MathJaxと組み合わせて使われることがあります。</p>
+                    </div>
+                    
+                    <br>
+                </div>
+
+                
+                <div class="container" id="container52">
+                    <input type="checkbox" onclick="grayOutContainer('container52')">HTML に関する文脈で CDN とは何の略か。最も適切なものを記号で答えよ。
+                    <p>① Content Distribution Network</p>
+                    <p>② Central Data Network </p>
+                    <p>③ Cool Developer's Network</p>
+                    <p>④ Content Delivery Network</p>
+                    <p>⑤ Chocolate Donut Network</p>
+                    <p><span id="test"><input type="checkbox" id="blank82"><label for="blank82">　④　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation49')">解説を見る</button>
+                    <div class="explanation" id="explanation49">
+                        <p><b>CDN (Content Delivery Network)</b>は、インターネット上でコンテンツを効率的に配信するための分散型サーバーネットワークです。</p>
+                    </div>
+                    <br>
+                </div>
+            </section>
+
+            <section>
+                <u>
+                    <h2 id="note5">講義ノート第13回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+                <p>定着確認なし</p>
+            </section>
+            
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+    </body>
+</html>
+
+            <!-- <section>
+                <u>
+                    <h2 id="note">講義ノート第回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+            </section> -->
+<!-- 
+            <div class="container" id="container">
+                <input type="checkbox" onclick="grayOutContainer('container')">
+                <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p>
+                <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                <div class="explanation" id="explanation">
+                    <p></p>
+                </div>
+                <br>
+            </div> -->
